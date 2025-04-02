@@ -1,23 +1,29 @@
 import java.util.HashMap;
 
-/**
- * Write a description of class CountryCapitals here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class CountryCapitals
 {
     // instance variables - replace the example below with your own
-    private int x;
-
+    public static void main(String[] args){
+        HashMap<String, String> capitalCities = new HashMap<String, String>();
+        
+        // Add keys and values - countries and capitalCities
+        capitalCities.put("New Zealand", "Wellington");
+        capitalCities.put("Australia", "Canberra");
+        capitalCities.put("Germany", "Berlin");
+        capitalCities.put("Norway", "Oslo");
+        capitalCities.put("USA", "Washington DC");
+        
+        System.out.println(capitalCities);
+        System.out.println(capitalCities.get("New Zealand"));
+    }
+    
     /**
      * Constructor for objects of class CountryCapitals
      */
     public CountryCapitals()
     {
         // initialise instance variables
-        x = 0;
+        
     }
 
     /**
@@ -26,9 +32,9 @@ public class CountryCapitals
      * @param  y  a sample parameter for a method
      * @return    the sum of x and y
      */
-    public int sampleMethod(int y)
+    public void sampleMethod()
     {
         // put your code here
-        return x + y;
+        
     }
 }
