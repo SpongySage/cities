@@ -14,7 +14,31 @@ public class CountryCapitals
         capitalCities.put("USA", "Washington DC");
         
         System.out.println(capitalCities);
+        
+        //print value of a key
         System.out.println(capitalCities.get("New Zealand"));
+        
+        // remove key (removes value with it)
+        capitalCities.remove("USA");
+        System.out.println(capitalCities);
+        
+        System.out.println(capitalCities.size());
+        // print each key
+        for(String i : capitalCities.keySet()){
+            System.out.println(i);
+        }
+        // print each value
+        for(String i : capitalCities.values()){
+            System.out.println(i);
+        }
+        
+        // loop through dict and print all countries that contain n
+        for(String i : capitalCities.keySet()){
+            System.out.println("key: " + i + " value: " + capitalCities.get(i));
+            if (i.toLowerCase().contains("n")){
+                System.out.println("Country " + i + " Capital " + capitalCities.get(i));
+            }
+        }
     }
     
     /**
